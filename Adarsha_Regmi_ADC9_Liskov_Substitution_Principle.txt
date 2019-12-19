@@ -1,0 +1,45 @@
+The Liskov Substitution Principle states that, any class which which is the child class of parent should be usable in place of its 
+parent without any unexpected behaviour. This principle is useful in reducing coupling and facilate the code reuseability 
+capability. The child class can extend their parent class without the need of update.
+
+example :
+
+public class ARE{
+protected int width, height;
+public int getwidth(){return width;}
+public int getheight(){return height;}
+public int setheight(int height){this.height=height;}
+public int setwidth(int width){this.width=width;}
+public int Area(){return height*height;}
+}
+  
+  another class circle extends above class
+  
+  class Circle extends ARE{
+  
+  private int radius;
+  
+  }
+  
+  it cannot use above method area now. Since it needs different formula for calculation.So, this violates LSP.
+  To overcome this issue other classes needed to make base class properly extend the superclass.
+  
+  first create a interface area
+ interface Area(){
+ public int area();
+ }
+ 
+ class rectangle implements Area(){
+  int area(){
+  return width*height;
+ }
+ }
+ 
+ public class circle implements Area(){
+ int area(){
+ return (22/7)*r^2;
+ }
+ }
+ 
+ 
+ 
