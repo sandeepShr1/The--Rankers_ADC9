@@ -4,4 +4,4 @@ GitHub Assignment
 Adarsha Regmi
 Sandeep Shrestha 
 Suzan Pyakurel
-Asmeet Dhital 
+Asmit Dhital 
