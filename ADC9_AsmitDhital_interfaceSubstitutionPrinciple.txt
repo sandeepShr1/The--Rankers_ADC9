@@ -1,1 +1,12 @@
-write here
+The Interface Segregation Principle states that clients should not be forced to implement interfaces they don't use. Instead of one fat interface, many small interfaces are preferred based on groups of methods, each one serving one submodule
+
+Rules of Thumb?
+Don’t depend on things you don’t need. Interfaces containing methods that are not specific to it are called polluted or fat interfaces. We should avoid them.
+Many client-specific interfaces are better than one general-purpose interface. When we have non-cohesive interfaces, the ISP guides us to create multiple, smaller, cohesive interfaces.
+Interface Segregation Principle Example
+Bad Code Design
+First, let's see "bad" design and implementation.
+
+Below is an example which violates the Interface Segregation Principle. Refer below steps to understand the source code and real world scenarios.
+
+Step 1: Interface for media player to play video and audio Step 2: VLC Media player implements Media player Step 3 : Div Media player implements both VideoMediaPlayer,AudioMediaPlayer Step 4: VLC Media player implements both Video Media Player and Audio Media Player. Step 5: Now there is a need for launching new Winamp player to play audio, but playing video is not supported at this stage. Here, Winamp player is forced to depend upon interface members they do not use. In this case, playVideo() method is not required
