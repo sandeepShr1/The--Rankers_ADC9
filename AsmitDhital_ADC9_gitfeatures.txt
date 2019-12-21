@@ -1,0 +1,16 @@
+Git is the most popular distributed version-control system which is mostly used in software development. 
+Using Git is very useful and can highly improve your workflow. The most important question is: 
+where can you learn Git easily?
+
+Before going into detail, let’s break down the name to better understand what we are dealing with.
+
+Version Control System (VCS)
+This is an application to track changes in files. It is commonly used when several people work on
+ a single file, or code in software development. The app will document all changes made to the file  
+ you’ll be able to see who made the change, what and when they changed, suggestions, comments and more.
+Distributed
+Basically, there are two types of VCS: Centralized VCS and Distributed VCS. The former keeps 
+the history of changes on a central server, which means that you need to be online to access 
+the file. A request or permission is also required if anyone wants to get the latest version 
+and change it. The latter provides everyone with a copy of the history on their local servers, 
+thus enabling them to work independently, and make any changes they want.
